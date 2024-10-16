@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Software Ltd</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5c5e0bb5fb.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="logo.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>We would love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fa fa-phone contact-icon"></i>
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p>info@softwareltd.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-map-marker contact-icon"></i>
+                    <h3>Location</h3>
+                    <p>123 Business Avenue, Suite 456, City, Country</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-clock-o contact-icon"></i>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-form-section">
+            <div class="form-card">
+                <h3>Send Us a Message</h3>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-alt"></i> Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+                    </div>
+                    <button type="submit" class="button"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Software Ltd Website. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> 
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
