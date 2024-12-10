@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home  - Software Ltd</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/font-awesome.min.css"
+    >
+
+
+    <!-- jQuery UI CSS from CDN -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css"
+    >
+
+    <!-- Homepage Slider CSS -->
+    <!-- https://github.com/bqworks/slider-pro -->
+    <link rel="stylesheet" href="https://unpkg.com/slider-pro/dist/css/slider-pro.min.css">
+
+    <!-- jQuery JS library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jQuery UI JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+
+    <!-- Homepage Slider Js -->
+    <script src="https://unpkg.com/slider-pro/dist/js/jquery.sliderPro.min.js"></script>
+    
+    <script
+      src="https://kit.fontawesome.com/5c5e0bb5fb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript file containing our JavaScript and jQuery code  -->
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="active">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- jQuery Slider Plugin from 'https://github.com/bqworks/slider-pro' -->
+        <div class="slider">
+            <div class="slider-pro" id="home-slider">
+                <!-- Class to hold individual slides -->
+                <div class="sp-slides">
+                    <!-- Slide 1 -->
+                    <div class="sp-slide">
+                        <img class="sp-image" src="./img/slider-1.jpg" alt="slider 1 image">
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="sp-slide">
+                        <img class="sp-image" src="./img/slider-2.jpg" alt="slider 2 image">
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="sp-slide">
+                        <img class="sp-image" src="./img/slider-3.jpg" alt = "slider 3 image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="landing">
+            <h2>Welcome to Our Professional Services</h2>
+            <p>We provide top-notch services to help you succeed in your business and personal goals.</p>
+            <a href="./services.html" class="button">Learn More</a>
+        </section>
+
+        <section class="info">
+            <h3>What We Do</h3>
+            <p>Our services range from web development to digital marketing, all designed to ensure your online success.</p>
+        </section>
+
+        <!-- News loaded via AJAX on page load from 'https://newsapi.org/' -->
+        <section class="news">
+            <h3>Latest News</h3>
+            <!-- Displays all the news fetched via AJAX -->
+            <div id="news"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Software Ltd Website. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> 
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

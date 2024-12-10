@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Software Ltd</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/font-awesome.min.css"
+    >
+
+    <!-- jQuery UI CSS from CDN -->
+    <link 
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/themes/base/jquery-ui.min.css"
+    >
+
+    <!-- jQuery Modal Plugin from CDN (https://www.jquerymodal.com/) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css">
+
+    <!-- jQuery JS library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- jQuery UI JS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js"></script>
+
+     <!-- jQuery Modal Plugin from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/5c5e0bb5fb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JavaScript file containing our JavaScript and jQuery code  -->
+    <script src="./js/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="branding">
+            <img src="./img/logo.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get In Touch</h2>
+            <p>We would love to hear from you! Whether you have a question about our services, pricing, or anything else, our team is ready to answer all your questions.</p>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <i class="fa fa-phone contact-icon"></i>
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-envelope contact-icon"></i>
+                    <h3>Email</h3>
+                    <p>info@softwareltd.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-map-marker contact-icon"></i>
+                    <h3>Location</h3>
+                    <p>123 Business Avenue, Suite 456, City, Country</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fa fa-clock-o contact-icon"></i>
+                    <h3>Business Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-form-section">
+            <div class="form-card">
+                <h3>Send Us a Message</h3>
+                <form class="contact-form" id = "contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <!-- jQuery UI radiocheckbox widgets that represent the message urgency -->
+                    <div class="radio-group">
+                        <p><strong><i class="fa fa-clock"></i> Message Urgency:</strong></p>
+
+                        <div class="radio">
+                            <label for="very-urgent"> Very Urgent</label>
+                            <input type="radio" name="message-urgency" id="very-urgent" value="Very Urgent">
+                        </div>
+
+                        <div class="radio">
+                            <label for="moderately-urgent"> Moderately Urgent</label>
+                            <input type="radio" name="message-urgency" id="moderately-urgent" value="Moderately Urgent">
+                        </div>
+
+                        <div class="radio">
+                            <label for="not-urgent"> Not Urgent</label>
+                            <input type="radio" checked="checked" name="message-urgency" id="not-urgent" value="Not Urgent">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment-alt"></i> Message:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message" required></textarea>
+                    </div>
+
+                    <!-- jQuery UI progress bar widget that will be animated when the form is submitted -->
+                    <div class="progress-bar-container">
+                        <div id="progress-bar"></div>
+                    </div>
+
+                    <button type="submit" class="button"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+
+                <!-- jQuery Modal Plugin hidden modal that will be displayed once the form is submitted. -->
+                <div id="message-sent-modal" class="modal">
+                    <p>Thank you for contacting us. Your message has been sent.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Software Ltd Website. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a> 
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
